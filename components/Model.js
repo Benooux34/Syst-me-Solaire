@@ -13,7 +13,7 @@ function Model() {
     }, [gltf])
 
     useFrame(({ clock }) => {
-        gltf.scene.rotation.y = clock.getElapsedTime() * 0.2
+        gltf.scene.rotation.y = clock.getElapsedTime() * 0.05
     })
 
     return <primitive object={gltf.scene} />
